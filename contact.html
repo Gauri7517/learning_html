@@ -1,76 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    fieldset {
+      background-color: lightgrey;
+      width: 50%;
+      margin: 120px auto;
+    }
+    legend {
+      font-size: 24px;
+      
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index1.html">Home |</a>
-            <a href="about.html">About Us |</a>
-            <a href="sevices.html">Services |</a>
-            <a href="contact.html">Contact |</a>
-        </nav>
-    <h1>Contact Us</h1>
-
+  <header style="background-color:green; padding: 20px;">
+    <nav style="text-align: right;">
+      <a href="home.html" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 20px;">Home |</a>
+      <a href="about.html" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 20px;">About Us |</a>
+      <a href="services.html" style="color: #fff; text-decoration: none; font-size: 20px;">Services |</a>
+      <a href="contact.html" style="color: #fff; text-decoration: none; font-size: 20px;">Contact</a>
+    </nav>
+  </header>
+  <center>
+    <h1>Contact Us </h1>
     <fieldset>
-        <legend>Contact Form</legend>
-        <form>
-            <label>First Name</label>
-            <input type="text" placeholder="Enter Your First Name"/><br><br>
-
-            <label>Last Name</label>
-            <input type="text" placeholder="Enter your last name"/><br><br>
-
-            <label>Phone Number</label>
-            <input type="number" placeholder="EnterNumber"/><br><br>
-
-            <label>Email</label>
-            <input type="email" placeholder="Enter Email"/><br><br>
-
-            <label>Password</label>
-            <input type="password" placeholder="Enter password"/><br><br>
-
-            <label>DOB</label>
-            <input type="date"/>
-            <input type="month"/>
-            <input type="week"/>
-            <input type="time"/>
-            <input type="datetime-local"/>
-
-            <input type="color">
-            <input type="range"><br><br>
-
-            <label>Choose Cities</label>
-            <input type="checkbox" checked>pune
-            <input type="checkbox">mumbai
-            <input type="checkbox">satara
-            <input type="checkbox">latur<br><br>
-
-            <label>Choose Gender</label>
-            <input type="radio" name="gender" >male
-            <input type="radio" name="gender">female
-            <input type="radio" name="gender">others<br><br>
-
-            <label>Select your Favourate dish</label>
-            <select>
-                <option>Please Choose.....</option>
-                <option>Basundi</option>
-                <option>Gulab</option>
-                <option>Basundi</option>
-                <option>rabdi</option>
-            </select><br><br>
-            <label>Uplod Your image</label><br><br>
-            <input type="file"  multiple/><br><br>
-            
-            <label>Address</label>
-            <textarea rows="5" cols="10"></textarea>
-            <input type="submit">
-
-
-        </form>
+      <legend>Contact Form</legend>
+      <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name"/><br><br>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email"/><br><br>
+        <label>Phone:</label>
+        <input type="tel" placeholder="Enter your phone number"/><br><br>
+        <label>Favorite Pizza:</label>
+        <select>
+          <option>Please Choose.....</option>
+          <option>Margherita</option>
+          <option>Pepperoni</option>
+          <option>Hawaiian</option>
+          <option>Meat Lover's</option>
+        </select><br><br>
+        <label>Message:</label>
+        <textarea rows="5" cols="30" placeholder="Enter your message"></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
     </fieldset>
+  </center>
+  <footer style="background-color:green ; padding: 20px; text-align: center; clear: both;">
+    <p>&copy; 2025 All Rights Reserved</p>
+  </footer>
 </body>
 </html>
